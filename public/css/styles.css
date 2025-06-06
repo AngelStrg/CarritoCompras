@@ -1,0 +1,110 @@
+header {
+  border: 1px solid red;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: justify;
+}
+
+#boxLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#boxLogo h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#logo {
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.topnav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.topnav a:hover,
+.topnav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#mainMenuBto {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  display: none; /* oculto en pantallas grandes */
+}
+
+/* Botones del lado derecho */
+#menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuBtos {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease;
+}
+
+.menuBtos:hover {
+  transform: scale(1.1);
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .topnav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #mainMenuBto {
+    display: inline-block;
+  }
+
+  .topnav a {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+  }
+.card-img-top {
+  object-fit: cover;
+  height: 120px;
+  border-radius: 10px 10px 0 0;
+}
+
+  #menu {
+    align-self: flex-end;
+  }
+}
